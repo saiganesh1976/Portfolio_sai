@@ -105,7 +105,7 @@ const Contact = () => {
                 name="name"
                 id="name"
                 placeholder="Enter your Name"
-                className=" w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className=" w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               />
             </div>
             <div>
@@ -117,7 +117,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your Email"
-                className="w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className="w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               />
             </div>
             <div>
@@ -129,12 +129,12 @@ const Contact = () => {
                 id="message"
                 rows={8}
                 placeholder="Enter your message"
-                className="w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className="w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="p-2 bg-violet-800 text-white rounded-md mt-3 w-96"
+              className="p-2 bg-violet-800 text-white rounded-md mt-3 lg:w-96"
             >
               Submit
             </button>
