@@ -35,8 +35,8 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col items-center justify-center gap-8 m-4 sm:m-8 md:m-16 lg:m-24"
-      style={{margin:'30px'}}
+      className="flex flex-col justify-center gap-8 m-4 sm:m-8 md:m-16 lg:m-24"
+      
     >
       <h1 className="text-5xl text-center font-semibold">Get in touch</h1>
       <div className="flex flex-col lg:flex-row gap-40 mt-16 lg:mt-20">
