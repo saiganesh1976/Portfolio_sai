@@ -47,10 +47,14 @@ const Projects = () => {
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>Mittinrich</h1>
-
+          <a
+                href="https://drive.google.com/drive/folders/1lrWnHU-pSsXKReQCiWZf_RpP7tx0yqWn?usp=sharing"
+                target="_blank"
+              >
               <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
                   Know more <img src={arrow_icon} alt="" className="w-5" />
                 </button>
+            </a>
             </div>
           </div>
         </div>
