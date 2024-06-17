@@ -26,7 +26,7 @@ const Projects = () => {
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>MenStore.</h1>
               <a
-                href="https://github.com/saiganesh1976/Menstore"
+                href="https://menstore-fawn.vercel.app/"
                 target="_blank"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
@@ -114,7 +114,7 @@ const Projects = () => {
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>Hotstar UI clone</h1>
               <a
-                href="https://github.com/saiganesh1976/HotStar-Clone"
+                href="https://hotstar-clone-peach.vercel.app/"
                 target="_blank"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
