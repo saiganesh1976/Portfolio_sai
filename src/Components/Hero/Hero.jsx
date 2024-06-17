@@ -35,7 +35,8 @@ const Hero = () => {
           <div className="mt-3 lg:mt-0 transition ease-in-out delay-150 border-2 hover:-translate-z-1 hover:scale-105 duration-700 bg-gradient-to-r from-violet-500 to-fuchsia-500 py-3 px-5 rounded-full font-medium cursor-pointer text-md text-white">
             <a href="#contact">Connect with me</a>
           </div>
-          <a href="/SaiGanesh_Resume.pdf" download>
+           <a href={`${process.env.PUBLIC_URL}/assets/SaiGanesh_Resume.pdf`} download>
+{/*           <a href="/SaiGanesh_Resume.pdf" download> */}
             <div className="transition ease-in-out delay-150 hover:scale-105 duration-700 border-2 border-violet-300 hover:border-violet-600 py-3 px-5 w-40 text-center rounded-full font-medium cursor-pointer text-md text-violet-500">
               {" "}
               My Resume
