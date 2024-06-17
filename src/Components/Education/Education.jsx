@@ -1,5 +1,5 @@
 import React from "react";
-import bps from "../../assets/bps.jpeg";
+import bps from "../../assets/bps.jpg";
 import sri_chaithanya from "../../assets/sri_chaitanya.jpeg";
 import sreenidhi from "../../assets/sreenidhi.png";
 
