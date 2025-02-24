@@ -9,6 +9,12 @@ import css_icon from "../../assets/css.svg";
 import html_icon from "../../assets/html5.svg";
 import bootstrap_icon from "../../assets/bootstrap.svg";
 import vs_icon from "../../assets/vs.svg";
+import nodeJs_icon from "../../assets/nodejs.svg"
+import postman_icon from "../../assets/postman.svg"
+import MongoDB_icon from "../../assets/MongoDB.svg"
+import mySql_icon from "../../assets/mySql.svg"
+import git_icon from "../../assets/git.svg"
+import arduino_icon from "../../assets/aurdino.svg"
 
 const About = () => {
   return (
@@ -37,12 +43,18 @@ const About = () => {
               <img src={html_icon} alt="" className=" w-40" />
               <img src={css_icon} alt="" className=" mt-2 w-40" />
               <img src={js_icon} alt="" className=" w-40" />
-              <img src={bootstrap_icon} alt="" className=" w-40" />
               <img src={react_icon} alt="" className=" w-40" />
+              <img src={nodeJs_icon} alt="" className=" w-30" />
+              <img src={MongoDB_icon} alt="" className=" w-40" />
+              <img src={postman_icon} alt="" className=" w-40" />
               <img src={tailwind_icon} alt="" className=" w-40" />
+              <img src={bootstrap_icon} alt="" className=" w-40" />
+              <img src={vs_icon} alt="" className=" w-40" />
+              <img src={mySql_icon} alt="" className=" w-40" />
+              <img src={git_icon} alt="" className=" w-40" />
               <img src={ps_icon} alt="" className=" w-40" />
               <img src={figma_icon} alt="" className=" w-40" />
-              <img src={vs_icon} alt="" className=" w-40" />
+              <img src={arduino_icon} alt="" className=" w-40" />
             </div>
           </div>
         </div>

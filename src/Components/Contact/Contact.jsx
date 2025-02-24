@@ -35,8 +35,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col justify-center gap-8 m-4 sm:m-8 md:m-16 lg:m-24"
-      
+      className="flex flex-col justify-center gap-8 m-8 sm:m-10 md:m-16 lg:m-24"
     >
       <h1 className="text-5xl text-center font-semibold">Get in touch</h1>
       <div className="flex flex-col lg:flex-row gap-40 mt-16 lg:mt-20">
@@ -73,9 +72,9 @@ const Contact = () => {
             </a>
           </div>
           <div className="flex gap-4 items-center">
-            <img src={linkedin_icon} alt="Location Icon" className="w-6 h-6" />
+            <img src={linkedin_icon} alt="LinkedIn Icon" className="w-6 h-6" />
             <a
-              href="https://www.linkedin.com/in/ratnala-saiganesh/"
+              href="https://www.linkedin.com/in/saiganeshratnala/"
               target="_blank"
               className="text-lg cursor-pointer"
             >
@@ -83,7 +82,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="flex gap-4 items-center">
-            <img src={github_icon} alt="Location Icon" className="w-6 h-6" />
+            <img src={github_icon} alt="GitHub Icon" className="w-6 h-6" />
             <a
               href="https://github.com/saiganesh1976"
               target="_blank"
@@ -95,7 +94,7 @@ const Contact = () => {
         </div>
 
         <div className="w-full lg:w-3/4 xl:w-1/2">
-          <form onSubmit={onSubmit} className="flex flex-col gap-3">
+          <form onSubmit={onSubmit} className="flex flex-col gap-3 ">
             <div>
               <label htmlFor="name" className="block text-lg mb-2">
                 Your Name
@@ -105,7 +104,7 @@ const Contact = () => {
                 name="name"
                 id="name"
                 placeholder="Enter your Name"
-                className=" w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className="w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               />
             </div>
             <div>
@@ -117,7 +116,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your Email"
-                className="w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className="lg:w-96 w-full p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               />
             </div>
             <div>
@@ -129,7 +128,7 @@ const Contact = () => {
                 id="message"
                 rows={8}
                 placeholder="Enter your message"
-                className="w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
+                className=" w-full lg:w-96 p-2 border bg-slate-700 outline-none border-gray-300 rounded-md"
               ></textarea>
             </div>
             <button

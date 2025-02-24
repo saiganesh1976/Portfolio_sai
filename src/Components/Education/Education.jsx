@@ -19,9 +19,9 @@ const Education = () => {
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>Sreenidhi Institute of Science and Technology</h1>
-              <p className="text-sm m-2 font-light">BTech, Electronics and Computer Engineering</p>
+              <p className="text-sm m-2 font-light">B.Tech, Electronics and Computer Engineering</p>
               <p className="text-sm m-2 font-medium">2021-2025</p>
-              <p className="text-sm">CGPA: 8.69</p>
+              <p className="text-sm">CGPA: 8.71</p>
             </div>
           </div>
         </div>
