@@ -22,7 +22,7 @@ const Hero = () => {
         </h1>
         <p className="text-xl md:text-xl">Undergraduate at SNIST, Hyderabad</p>
         <div className="flex gap-3">
-          <a href="https://www.linkedin.com/in/ratnala-saiganesh/" target="_blank">
+          <a href="https://www.linkedin.com/in/saiganeshratnala/" target="_blank">
             <img src={linkedin_icon} alt="" className="w-8 my-5" />
           </a>
           <a href="https://github.com/saiganesh1976" target="_blank">
