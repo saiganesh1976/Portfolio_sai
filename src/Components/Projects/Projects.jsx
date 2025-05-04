@@ -19,7 +19,7 @@ const Projects = () => {
           <div className="overflow-hidden">
             <img
               className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={SRVAN}
+              src={eration}
               alt="SRVAN portal"
             />
           </div>
