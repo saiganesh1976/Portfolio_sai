@@ -54,8 +54,8 @@ const Education = () => {
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>Bhadrachalam Public School & JR. College</h1>
               <p className="text-sm m-2 font-light">High School, CBSE</p>
-              <p className="text-sm m-2 font-medium">2014-2018</p>
-              <p className="text-sm">Percentage: 78%</p>
+              <p className="text-sm m-2 font-medium">2018-2019</p>
+              <p className="text-sm">Marks: 468/600</p>
             </div>
           </div>
         </div>
