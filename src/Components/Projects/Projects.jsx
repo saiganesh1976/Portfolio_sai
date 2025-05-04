@@ -26,10 +26,10 @@ const Projects = () => {
           </div>
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Smart Ration Vitharan Aur Niyantaran</h1>
+              <h1>SRVAN Portal</h1>
               <div className="flex justify-center gap-4 my-4">
               <a
-                href="https://menstore-frontend.onrender.com/"
+                href="https://major-frontend-wpbt.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -38,12 +38,12 @@ const Projects = () => {
                 </button>
               </a>
               <a
-                href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
+                href="https://github.com/saiganesh1976/Major" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
-                <FaGithub />
+                <FaGithub /> GitHub Link
               </a>
             </div>
             </div>
@@ -71,12 +71,13 @@ const Projects = () => {
                 </button>
               </a>
               <a
-                href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
+                href="https://github.com/saiganesh1976/Menstore" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
                 <FaGithub />
+                GitHub Link
               </a>
             </div>
             </div>
