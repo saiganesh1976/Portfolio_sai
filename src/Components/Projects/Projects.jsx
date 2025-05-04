@@ -43,7 +43,10 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
-                <FaGithub /> GitHub Link
+                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
+                  <FaGithub />
+                  GitHub Link
+                </button>
               </a>
             </div>
             </div>
@@ -76,8 +79,10 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
-                <FaGithub />
-                GitHub Link
+                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
+                  <FaGithub />
+                  GitHub Link
+                </button>
               </a>
             </div>
             </div>
@@ -110,7 +115,10 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
-                <FaGithub />
+                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
+                  <FaGithub />
+                  GitHub Link
+                </button>
               </a>
             </div>
 
