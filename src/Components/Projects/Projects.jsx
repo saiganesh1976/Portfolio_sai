@@ -19,15 +19,15 @@ const Projects = () => {
           <div className="overflow-hidden">
             <img
               className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={eration}
-              alt="menstore"
+              src={SRVAN}
+              alt="SRVAN portal"
             />
           </div>
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Smart Ration Vitharan Aur Niyantharan</h1>
+              <h1>Smart Ration Vitharan Aur Niyantaran</h1>
               <a
-                href="#"
+                href="https://major-frontend-wpbt.onrender.com/"
                 target="_blank"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>E-seva Portal</h1>
               <a
-                href="https://github.com/saiganesh1976/e-Seva-Portal"
+                href="https://e-seva-1.onrender.com/"
                 target="_blank"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
@@ -71,7 +71,7 @@ const Projects = () => {
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>MenStore.</h1>
               <a
-                href="https://menstore-fawn.vercel.app/"
+                href="https://menstore-frontend.onrender.com/"
                 target="_blank"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
