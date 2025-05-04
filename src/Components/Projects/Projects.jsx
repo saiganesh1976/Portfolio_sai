@@ -7,6 +7,7 @@ import menstore from "../../assets/menstore.png";
 import arrow_icon from '../../assets/arrow_icon.svg'
 import Eseva from "../../assets/e-seva.png";
 import eration from "../../assets/eration.png";
+import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <div
@@ -33,6 +34,14 @@ const Projects = () => {
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
                   Know more <img src={arrow_icon} alt="" className="w-5" />
                 </button>
+              </a>
+              <a
+                href="https://github.com/saiganesh1976/menstore" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xl"
+              >
+                <FaGithub />
               </a>
             </div>
           </div>
