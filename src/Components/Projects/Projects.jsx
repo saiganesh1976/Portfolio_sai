@@ -27,22 +27,25 @@ const Projects = () => {
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>Smart Ration Vitharan Aur Niyantaran</h1>
+              <div className="flex justify-center gap-4 my-4">
               <a
-                href="https://major-frontend-wpbt.onrender.com/"
+                href="https://menstore-frontend.onrender.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
+                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
+                  Live Link <img src={arrow_icon} alt="" className="w-5" />
                 </button>
               </a>
               <a
-                href="https://github.com/saiganesh1976/menstore" 
+                href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xl"
+                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
                 <FaGithub />
               </a>
+            </div>
             </div>
           </div>
         </div>
@@ -57,14 +60,25 @@ const Projects = () => {
           <div className="flex flex-col justify-between flex-grow px-6 py-4">
             <div className="font-semibold text-xl mb-2 text-center">
               <h1>E-seva Portal</h1>
+              <div className="flex justify-center gap-4 my-4">
               <a
-                href="https://e-seva-1.onrender.com/"
+                href="https://menstore-frontend.onrender.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
+                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
+                  Live Link <img src={arrow_icon} alt="" className="w-5" />
                 </button>
               </a>
+              <a
+                href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
+              >
+                <FaGithub />
+              </a>
+            </div>
             </div>
           </div>
         </div>
@@ -86,14 +100,14 @@ const Projects = () => {
                 rel="noopener noreferrer"
               >
                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
+                  Live Link <img src={arrow_icon} alt="" className="w-5" />
                 </button>
               </a>
               <a
                 href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xl"
+                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
               >
                 <FaGithub />
               </a>
