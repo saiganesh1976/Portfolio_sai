@@ -65,7 +65,7 @@ const Projects = () => {
               <h1>E-seva Portal</h1>
               <div className="flex justify-center gap-4 my-4">
               <a
-                href="https://menstore-frontend.onrender.com/"
+                href="https://e-seva-1.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,7 +74,7 @@ const Projects = () => {
                 </button>
               </a>
               <a
-                href="https://github.com/saiganesh1976/Menstore" 
+                href="https://github.com/saiganesh1976/e-Seva-Portal" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
