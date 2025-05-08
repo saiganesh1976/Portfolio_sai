@@ -4,215 +4,90 @@ import project1 from "../../assets/project1.png";
 import project5 from "../../assets/project5.png";
 import project4 from "../../assets/project4.png";
 import menstore from "../../assets/menstore.png";
-import arrow_icon from '../../assets/arrow_icon.svg'
+import arrow_icon from "../../assets/arrow_icon.svg";
 import Eseva from "../../assets/e-seva.png";
 import eration from "../../assets/eration.png";
 import { FaGithub } from "react-icons/fa";
+
+const projects = [
+  {
+    img: eration,
+    title: "SRVAN Portal",
+    live: "https://major-frontend-wpbt.onrender.com/",
+    github: "https://github.com/saiganesh1976/Major",
+  },
+  {
+    img: Eseva,
+    title: "E-seva Portal",
+    live: "https://e-seva-1.onrender.com/",
+    github: "https://github.com/saiganesh1976/e-Seva-Portal",
+  },
+  {
+    img: menstore,
+    title: "MenStore.",
+    live: "https://menstore-frontend.onrender.com/",
+    github: "https://github.com/saiganesh1976/menstore",
+  },
+  {
+    img: project2,
+    title: "Mittinrich",
+    live: "https://drive.google.com/drive/folders/1lrWnHU-pSsXKReQCiWZf_RpP7tx0yqWn?usp=sharing",
+  },
+  {
+    img: project1,
+    title: "Pet Health Monitoring System",
+    github: "https://github.com/saiganesh1976/Pets-health-monitoring-system",
+  },
+  {
+    img: project4,
+    title: "Basic Banking System",
+    github: "https://github.com/saiganesh1976/Ratnala-s-Bank",
+  },
+  {
+    img: project5,
+    title: "Hotstar UI Clone",
+    live: "https://hotstar-clone-peach.vercel.app/",
+  },
+];
+
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="flex flex-col items-center justify-center gap-8 m-8 sm:m-12 md:m-24"
-    >
-      <h1 className="text-5xl text-center font-semibold">Projects</h1>
-      <div className="lg:flex md:grid md:grid-cols-2 flex-wrap justify-center items-stretch gap-12 py-10">
-      <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={eration}
-              alt="SRVAN portal"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>SRVAN Portal</h1>
-              <div className="flex justify-center gap-4 my-4">
-              <a
-                href="https://major-frontend-wpbt.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  Live Link <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-              <a
-                href="https://github.com/saiganesh1976/Major" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  <FaGithub />
-                  GitHub Link
-                </button>
-              </a>
+    <div id="projects" className="px-6 sm:px-12 md:px-24 py-12 flex flex-col items-center">
+      <h1 className="text-4xl sm:text-5xl font-semibold text-center mb-12">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap justify-center gap-y-12 gap-x-8">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="flex flex-col w-full sm:w-[320px] rounded border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300 transition-all"
+          >
+            <div className="overflow-hidden">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110"
+              />
             </div>
+            <div className="flex flex-col justify-between px-6 py-4 flex-grow">
+              <h2 className="font-semibold text-xl text-center mb-4">{project.title}</h2>
+              <div className="flex justify-center flex-wrap gap-4">
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
+                      Live Link <img src={arrow_icon} alt="arrow" className="w-4" />
+                    </button>
+                  </a>
+                )}
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
+                      <FaGithub /> GitHub Link
+                    </button>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={Eseva}
-              alt="Eseva"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>E-seva Portal</h1>
-              <div className="flex justify-center gap-4 my-4">
-              <a
-                href="https://e-seva-1.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  Live Link <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-              <a
-                href="https://github.com/saiganesh1976/e-Seva-Portal" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
-              >
-                 <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  <FaGithub />
-                  GitHub Link
-                </button>
-              </a>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={menstore}
-              alt="menstore"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>MenStore.</h1>
-              <div className="flex justify-center gap-4 my-4">
-              <a
-                href="https://menstore-frontend.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  Live Link <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-              <a
-                href="https://github.com/saiganesh1976/menstore" // <-- Replace with actual GitHub repo
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center text-black dark:text-white hover:text-violet-500 text-xxl"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex items-center gap-2">
-                  <FaGithub />
-                  GitHub Link
-                </button>
-              </a>
-            </div>
-
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={project2}
-              alt="mittinrich"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Mittinrich</h1>
-          <a
-                href="https://drive.google.com/drive/folders/1lrWnHU-pSsXKReQCiWZf_RpP7tx0yqWn?usp=sharing"
-                target="_blank"
-              >
-              <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-            </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={project1}
-              alt="pet health monitoring system"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Pet Health Monitoring System</h1>
-              <a
-                href="https://github.com/saiganesh1976/Pets-health-monitoring-system"
-                target="_blank"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={project4}
-              alt="basic bank system"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Basic Banking System</h1>
-              <a
-                href="https://github.com/saiganesh1976/Ratnala-s-Bank"
-                target="_blank"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col max-w-sm w-full mb-10 rounded bg-transparent border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300">
-          <div className="overflow-hidden">
-            <img
-              className="w-full h-48 object-cover transition-transform ease-in-out duration-500 transform hover:scale-110"
-              src={project5}
-              alt="hotstar clone"
-            />
-          </div>
-          <div className="flex flex-col justify-between flex-grow px-6 py-4">
-            <div className="font-semibold text-xl mb-2 text-center">
-              <h1>Hotstar UI clone</h1>
-              <a
-                href="https://hotstar-clone-peach.vercel.app/"
-                target="_blank"
-              >
-                <button className="text-sm font-medium p-2 bg-transparent border-2 hover:bg-violet-600 rounded-md flex my-4 mx-auto items-center gap-2">
-                  Know more <img src={arrow_icon} alt="" className="w-5" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
