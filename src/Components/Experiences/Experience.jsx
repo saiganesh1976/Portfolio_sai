@@ -8,13 +8,13 @@ const Experience = () => {
     >
       <h1 className="text-5xl text-center font-semibold">Experience</h1>
 
-      <ol className="items-center sm:flex lg:mt-10 lg:m-2 m-5">
+      <ol className="items-center sm:flex lg:mt-10 lg:m-2 m-5 flex-wrap">
+        {/* Joint Secretary */}
         <li className="relative mb-6 sm:mb-0">
           <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
               <svg
                 className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -28,23 +28,24 @@ const Experience = () => {
             <h3 className="text-lg font-semibold text-violet-500">
               Joint Secretary
             </h3>
-            <p className="block my-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              At The Robotics Club-SNIST
+            <p className="my-2 text-sm text-gray-400 dark:text-gray-500">
+              The Robotics Club - SNIST
             </p>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm text-gray-400 dark:text-gray-500">
               Jul 2023 - Present
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              Web Development Lead and managed offical handles of Club.
+            <p className="text-base text-gray-500 dark:text-gray-400">
+              Web Development Lead and handled official club media and operations.
             </p>
           </div>
         </li>
+
+        {/* Marketing Deputy */}
         <li className="relative mb-6 sm:mb-0">
           <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
               <svg
                 className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -58,24 +59,24 @@ const Experience = () => {
             <h3 className="text-lg font-semibold text-violet-500">
               Marketing Deputy
             </h3>
-            <p className="block my-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              At The Robotics Club-SNIST
+            <p className="my-2 text-sm text-gray-400 dark:text-gray-500">
+              The Robotics Club - SNIST
             </p>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm text-gray-400 dark:text-gray-500">
               Sep 2023 - Nov 2023
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              we led a team in getting Sponsorships for our Annual Tech Fest of
-              SNIST -ROBOVEDA'23.
+            <p className="text-base text-gray-500 dark:text-gray-400">
+              We led a team to acquire sponsorships for SNIST’s Annual Tech Fest — ROBOVEDA'23.
             </p>
           </div>
         </li>
+
+        {/* Designing Team */}
         <li className="relative mb-6 sm:mb-0">
           <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
               <svg
                 className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -89,26 +90,24 @@ const Experience = () => {
             <h3 className="text-lg font-semibold text-violet-500">
               Designing Team
             </h3>
-            <p className="block my-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              At The Robotics Club-SNIST
+            <p className="my-2 text-sm text-gray-400 dark:text-gray-500">
+              The Robotics Club - SNIST
             </p>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm text-gray-400 dark:text-gray-500">
               Oct 2022 - Nov 2023
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              Contributed various creative endeavors, including designing
-              festival GIFs, posters for Club activities, and crafting the
-              annual magazine showcasing our club's achievements and events.
+            <p className="text-base text-gray-500 dark:text-gray-400">
+              Created festive GIFs, posters, and the club’s annual magazine to showcase activities and accomplishments.
             </p>
           </div>
         </li>
 
+        {/* Student Mentor */}
         <li className="relative mb-6 sm:mb-0">
           <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
               <svg
                 className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -122,15 +121,14 @@ const Experience = () => {
             <h3 className="text-lg font-semibold text-violet-500">
               Student Mentor
             </h3>
-            <p className="block my-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              At The Robotics Club-SNIST
+            <p className="my-2 text-sm text-gray-400 dark:text-gray-500">
+              The Robotics Club - SNIST
             </p>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm text-gray-400 dark:text-gray-500">
               Feb 2023 - Jul 2023
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              Led a team of nine individuals within the club to successfully
-              develop and implement the Pets Health Monitoring System project.
+            <p className="text-base text-gray-500 dark:text-gray-400">
+              Mentored a 9-member team in developing the “Pets Health Monitoring System” project.
             </p>
           </div>
         </li>
