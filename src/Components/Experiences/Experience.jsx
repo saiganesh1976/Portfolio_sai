@@ -4,7 +4,7 @@ const timeline = [
   {
     role: "Joint Secretary",
     org: "The Robotics Club-SNIST",
-    time: "Jul 2023 - Present",
+    time: "Jul 2023 - Jul 2024",
     desc: "Web Development Lead and managed official handles of Club.",
   },
   {
@@ -33,7 +33,7 @@ const Experience = () => {
       id="Experience"
       className="flex flex-col items-center justify-center px-4 sm:px-10 py-12"
     >
-      <h2 className="text-4xl font-bold mb-10 text-center">Experience</h2>
+      <h2 className="text-4xl font-bold mb-10 text-center">Leadership & Responsibilities</h2>
       <div className="relative w-full overflow-x-auto">
         <ol className="flex space-x-8 sm:space-x-12 min-w-max px-2">
           {timeline.map((item, i) => (
