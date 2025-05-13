@@ -19,60 +19,108 @@ import java_icon from "../../assets/Java.svg";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center justify-center gap-8 p-8 md:p-16 bg-black text-white">
+    <div id="about" className="flex flex-col items-center justify-center gap-8 p-8 md:p-16">
       <h1 className="text-5xl text-center font-semibold">About Me</h1>
-
       <div className="flex flex-col md:flex-row items-center md:items-start mt-10 gap-12">
-        {/* Profile Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src={profile_img}
             alt="Profile"
-            className="w-3/4 rounded-lg shadow-2xl transform transition-all duration-700 ease-in-out hover:scale-110 hover:rotate-3"
+            className="w-3/4 rounded-lg shadow-xl transform transition-all duration-700 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl"
           />
         </div>
-
-        {/* About Text & Skills */}
         <div className="flex flex-col gap-8 w-full md:w-1/2">
-          <p className="text-lg text-justify text-white">
-            Hello, I’m <span className="font-semibold">Sai Ganesh Ratnala</span>, a passionate and dedicated Final Year B.Tech student specializing in Electronics and Computer Engineering at Sreenidhi Institute of Science and Technology (SNIST), Hyderabad. I'm set to graduate in 2025.
-            <br />
+          <p className="text-lg text-justify">
+            Hello, I’m Sai Ganesh Ratnala, a passionate and dedicated Final Year B.Tech student specializing in Electronics and Computer Engineering at Sreenidhi Institute of Science and Technology (SNIST), Hyderabad. I'm set to graduate in 2025.
             <br />
             With a keen interest in Robotics and Web Development, I have gained hands-on experience through a variety of personal and collaborative projects. My enthusiasm for solving real-world problems through innovative technology drives me to constantly learn and improve.
-            <br />
             <br />
             I enjoy working in dynamic, fast-paced environments where I can collaborate with like-minded professionals to develop meaningful solutions. My expertise spans full-stack development, data management, and systems design.
           </p>
 
-          {/* Skills Section */}
           <div>
-            <h2 className="text-xl font-semibold mb-4">Key Skills & Technologies:</h2>
-            <div className="grid lg:grid-cols-5 grid-cols-3 gap-6">
-              {[
-                java_icon,
-                html_icon,
-                css_icon,
-                js_icon,
-                react_icon,
-                nodeJs_icon,
-                MongoDB_icon,
-                postman_icon,
-                tailwind_icon,
-                bootstrap_icon,
-                vs_icon,
-                mySql_icon,
-                git_icon,
-                ps_icon,
-                figma_icon,
-                arduino_icon,
-              ].map((icon, index) => (
-                <img
-                  key={index}
-                  src={icon}
-                  alt="Skill Icon"
-                  className="w-28 h-28 border-4 border-white rounded-xl transform transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl"
-                />
-              ))}
+            <h2 className="text-xl font-semibold">Key Skills & Technologies:</h2>
+            <div className="grid lg:grid-cols-5 grid-cols-3 gap-4 mt-4">
+              <img
+                src={java_icon}
+                alt="Java"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={html_icon}
+                alt="HTML5"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={css_icon}
+                alt="CSS3"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={js_icon}
+                alt="JavaScript"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={react_icon}
+                alt="React"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={nodeJs_icon}
+                alt="Node.js"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={MongoDB_icon}
+                alt="MongoDB"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={postman_icon}
+                alt="Postman"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={tailwind_icon}
+                alt="Tailwind CSS"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={bootstrap_icon}
+                alt="Bootstrap"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={vs_icon}
+                alt="Visual Studio"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={mySql_icon}
+                alt="MySQL"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={git_icon}
+                alt="Git"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={ps_icon}
+                alt="Photoshop"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={figma_icon}
+                alt="Figma"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
+              <img
+                src={arduino_icon}
+                alt="Arduino"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
             </div>
           </div>
         </div>
