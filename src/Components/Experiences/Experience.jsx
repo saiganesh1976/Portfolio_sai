@@ -25,7 +25,7 @@ const timeline = [
 
 const Experience = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
+    <section className="transition-colors duration-300">
       <div className="container max-w-5xl px-4 py-16 mx-auto">
         <div className="grid gap-4 sm:grid-cols-12">
           
