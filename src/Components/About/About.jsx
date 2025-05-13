@@ -44,82 +44,82 @@ const About = () => {
               <img
                 src={java_icon}
                 alt="Java"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={html_icon}
                 alt="HTML5"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={css_icon}
                 alt="CSS3"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={js_icon}
                 alt="JavaScript"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={react_icon}
                 alt="React"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={nodeJs_icon}
                 alt="Node.js"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={MongoDB_icon}
                 alt="MongoDB"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={postman_icon}
                 alt="Postman"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={tailwind_icon}
                 alt="Tailwind CSS"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={bootstrap_icon}
                 alt="Bootstrap"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={vs_icon}
                 alt="Visual Studio"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={mySql_icon}
                 alt="MySQL"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={git_icon}
                 alt="Git"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={ps_icon}
                 alt="Photoshop"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={figma_icon}
                 alt="Figma"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
               <img
                 src={arduino_icon}
                 alt="Arduino"
-                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+                className="w-28 h-28 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
               />
             </div>
           </div>
