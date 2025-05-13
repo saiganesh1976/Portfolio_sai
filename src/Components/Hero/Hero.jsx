@@ -17,22 +17,45 @@ const skills = [
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentSkill, setCurrentSkill] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    const typingEffect = setInterval(() => {
-      setDisplayedText((prevText) => {
-        const nextChar = skills[currentSkill].charAt(prevText.length);
-        if (nextChar) {
-          return prevText + nextChar;
-        } else {
-          setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
-          return "";
-        }
-      });
-    }, 100); 
+    let typingTimeout;
+    let switchTimeout;
 
-    return () => clearInterval(typingEffect); 
-  }, [currentSkill]);
+    const typeSkill = () => {
+      setIsTyping(true);
+      let currentText = displayedText;
+      const skill = skills[currentSkill];
+      let index = 0;
+
+      const typingInterval = setInterval(() => {
+        setDisplayedText((prevText) => {
+          if (index < skill.length) {
+            currentText += skill.charAt(index);
+            index++;
+            return currentText;
+          } else {
+            clearInterval(typingInterval);
+            setIsTyping(false);
+            return currentText;
+          }
+        });
+      }, 100); // Typing speed
+
+      switchTimeout = setTimeout(() => {
+        setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
+        setDisplayedText("");
+      }, skill.length * 100 + 1500); 
+    };
+
+    typingTimeout = setTimeout(typeSkill, 500); 
+
+    return () => {
+      clearTimeout(typingTimeout);
+      clearTimeout(switchTimeout);
+    };
+  }, [currentSkill, displayedText]);
 
   return (
     <div className="flex flex-col items-center text-center p-6 md:py-28 md:px-48 gap-6 lg:flex-row lg:gap-14">
