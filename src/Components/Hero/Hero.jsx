@@ -6,29 +6,34 @@ import instagram_icon from "../../assets/instagram.svg";
 // import resume from '../../assets/SaiGanesh_Resume.pdf';
 import { FiDownload } from "react-icons/fi";
 
-  const skills = [
-  "React.js",
-  "Node.js",
-  "MongoDB",
-  "Express.js",
-  "JavaScript",
-  "HTML & CSS",
+const skills = [
+  "MERN Stack Developer",
+  "Java Programmer",
+  "Robotics Enthusiast",
   "Tailwind CSS",
-  "Flutter",
-  "Python",
-  "C++"
 ];
 
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [currentSkill, setCurrentSkill] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
-    }, 1000); // Change every second
+    const typingEffect = setInterval(() => {
+      setDisplayedText((prevText) => {
+        const nextChar = skills[currentSkill].charAt(prevText.length);
+        if (nextChar) {
+          return prevText + nextChar;
+        } else {
+          // Once a skill is fully typed, switch to the next one
+          setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
+          return "";
+        }
+      });
+    }, 100); // Typing speed (100ms per character)
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
+    return () => clearInterval(typingEffect); // Clean up interval on unmount
+  }, [currentSkill]);
+
   return (
     <div className="flex flex-col items-center text-center p-6 md:py-28 md:px-48 m gap-6 lg:flex-row lg:gap-14">
       <div className="w-full lg:w-1/3">
@@ -39,13 +44,14 @@ const Hero = () => {
         />
       </div>
       <div className="flex flex-col items-center lg:items-start lg:text-left gap-4 lg:w-2/3">
-        <p className=" text-xl">Hi There,</p>
+        <p className="text-xl">Hi There,</p>
         <h1 className="text-4xl md:text-5xl font-semibold">
           I'm <span className="text-violet-400">Sai Ganesh Ratnala</span>
         </h1>
         <p className="text-xl md:text-xl">a Final Year Electronics & Computer Engineering Student at SNIST, Hyderabad.</p>
         <h1 className="text-3xl font-bold text-center transition-all duration-500 ease-in-out">
-          I specialize in <span className="text-blue-600">{skills[currentIndex]}</span>
+          I specialize in{" "}
+          <span className="text-violet-400">{displayedText}</span>
         </h1>
         <div className="flex gap-3">
           <a href="https://www.linkedin.com/in/saiganeshratnala/" target="_blank">
@@ -63,7 +69,7 @@ const Hero = () => {
             <a href="#contact">Connect with me</a>
           </div>
           <a href="/SaiGanesh_Resume.pdf" download>
-          <div className="flex items-center justify-center gap-2 transition ease-in-out delay-150 hover:scale-105 duration-700 border-2 border-violet-300 hover:border-violet-600 py-3 px-5 w-50 text-center rounded-full font-medium cursor-pointer text-md text-violet-500">
+            <div className="flex items-center justify-center gap-2 transition ease-in-out delay-150 hover:scale-105 duration-700 border-2 border-violet-300 hover:border-violet-600 py-3 px-5 w-50 text-center rounded-full font-medium cursor-pointer text-md text-violet-500">
               My Resume <FiDownload className="text-violet-500" />
             </div>
           </a>
