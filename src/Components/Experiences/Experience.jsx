@@ -3,68 +3,74 @@ import React from "react";
 const timeline = [
   {
     role: "Joint Secretary",
-    org: "The Robotics Club-SNIST",
+    org: "The Robotics Club - SNIST",
     time: "Jul 2023 - Jul 2024",
-    desc: "Web Development Lead and managed official handles of Club.",
+    desc: "Led the Web Development team and managed the club's official handles.",
   },
   {
     role: "Marketing Deputy",
-    org: "The Robotics Club-SNIST",
+    org: "The Robotics Club - SNIST",
     time: "Sep 2023 - Nov 2023",
-    desc: "Led a team to secure sponsorships for ROBOVEDA'23.",
+    desc: "Led a marketing team and successfully secured sponsorships for ROBOVEDA'23.",
   },
   {
-    role: "Designing Team",
-    org: "The Robotics Club-SNIST",
+    role: "Designing Team Member",
+    org: "The Robotics Club - SNIST",
     time: "Oct 2022 - Nov 2023",
-    desc: "Designed festival GIFs, posters, and the annual club magazine.",
+    desc: "Designed festival creatives, GIFs, posters, and the annual club magazine.",
   },
   {
     role: "Student Mentor",
-    org: "The Robotics Club-SNIST",
+    org: "The Robotics Club - SNIST",
     time: "Feb 2023 - Jul 2023",
-    desc: "Led a 9-member team for the Pets Health Monitoring System project.",
+    desc: "Mentored a 9-member team in building a Pet Health Monitoring System using IoT.",
   },
 ];
 
 const Experience = () => {
   return (
-    <section
-      id="Experience"
-      className="flex flex-col items-center justify-center px-4 sm:px-10 py-12"
-    >
-      <h2 className="text-4xl font-bold mb-10 text-center">Leadership & Responsibilities</h2>
-      <div className="relative w-full overflow-x-auto">
-        <ol className="flex space-x-8 sm:space-x-12 min-w-max px-2">
+    <section id="Experience" className="py-16 bg-white dark:bg-gray-900">
+      <h2 className="text-4xl font-bold text-center text-blue-600 mb-12">
+        Leadership & Responsibilities
+      </h2>
+
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:grid grid-cols-9 text-blue-50">
           {timeline.map((item, i) => (
-            <li key={i} className="relative flex flex-col items-center w-72">
-              {/* Connector line */}
-              {i !== timeline.length - 1 && (
-                <div className="absolute top-3 left-full w-8 sm:w-12 h-0.5 bg-blue-500 animate-pulse"></div>
-              )}
-              {/* Dot */}
-              <div className="w-6 h-6 bg-blue-200 dark:bg-blue-900 border-4 border-white dark:border-gray-900 rounded-full flex items-center justify-center z-10">
-                <svg
-                  className="w-3 h-3 text-blue-800 dark:text-blue-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
+            <div
+              key={i}
+              className={`flex ${i % 2 === 0 ? "flex-row-reverse md:contents" : "md:contents"}`}
+            >
+              {/* Card */}
+              <div
+                className={`bg-blue-500 p-4 rounded-xl my-4 shadow-md ${
+                  i % 2 === 0
+                    ? "col-start-1 col-end-5 ml-auto"
+                    : "col-start-6 col-end-10 mr-auto"
+                }`}
+              >
+                <h3 className="font-semibold text-lg mb-1">{item.role}</h3>
+                <p className="text-sm text-white font-medium mb-1">
+                  {item.org}
+                </p>
+                <p className="text-xs text-blue-200 mb-2">{item.time}</p>
+                <p className="leading-tight text-justify">{item.desc}</p>
               </div>
 
-              {/* Content */}
-              <div className="mt-6 text-center">
-                <h3 className="text-lg font-semibold text-violet-600">
-                  {item.role}
-                </h3>
-                <p className="text-sm text-gray-500 mt-1">{item.org}</p>
-                <p className="text-sm text-gray-400 mb-1">{item.time}</p>
-                <p className="text-sm text-gray-600">{item.desc}</p>
+              {/* Line and Dot */}
+              <div
+                className={`col-start-5 col-end-6 md:mx-auto relative ${
+                  i % 2 === 0 ? "mr-10" : "ml-10"
+                }`}
+              >
+                <div className="h-full w-6 flex items-center justify-center">
+                  <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                </div>
+                <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
               </div>
-            </li>
+            </div>
           ))}
-        </ol>
+        </div>
       </div>
     </section>
   );
