@@ -48,9 +48,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl font-semibold">
           I'm <span className="text-violet-400">Sai Ganesh Ratnala</span>
         </h1>
-        <p className="text-xl md:text-xl">a Final Year Electronics & Computer Engineering Student at SNIST, Hyderabad.</p>
-        <h1 className="text-3xl font-bold text-center transition-all duration-500 ease-in-out">
-          I specialize in{" "}
+        <h1 className="text-4xl font-bold text-center transition-all duration-500 ease-in-out">
           <span className="text-violet-400">{displayedText}</span>
         </h1>
         <div className="flex gap-3">
