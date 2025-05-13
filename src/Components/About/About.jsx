@@ -15,6 +15,7 @@ import MongoDB_icon from "../../assets/MongoDB.svg";
 import mySql_icon from "../../assets/mySql.svg";
 import git_icon from "../../assets/git.svg";
 import arduino_icon from "../../assets/aurdino.svg";
+import java_icon from "../../assets/Java.svg";
 
 const About = () => {
   return (
@@ -40,6 +41,11 @@ const About = () => {
           <div>
             <h2 className="text-xl font-semibold text-gray-800">Key Skills & Technologies:</h2>
             <div className="grid lg:grid-cols-5 grid-cols-3 gap-6 mt-4">
+              <img
+                src={java_icon}
+                alt="Java"
+                className="w-24 h-24 transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-lg"
+              />
               <img
                 src={html_icon}
                 alt="HTML5"
