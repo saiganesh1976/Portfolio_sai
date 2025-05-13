@@ -2,74 +2,60 @@ import React from "react";
 
 const timeline = [
   {
-    role: "Joint Secretary",
-    org: "The Robotics Club - SNIST",
+    title: "Joint Secretary - The Robotics Club",
     time: "Jul 2023 - Jul 2024",
-    desc: "Led the Web Development team and managed the club's official handles.",
+    desc: "Led the Web Development team and managed the club’s official handles with a focus on outreach and automation.",
   },
   {
-    role: "Marketing Deputy",
-    org: "The Robotics Club - SNIST",
+    title: "Marketing Deputy - The Robotics Club",
     time: "Sep 2023 - Nov 2023",
-    desc: "Led a marketing team and successfully secured sponsorships for ROBOVEDA'23.",
+    desc: "Headed a marketing team and played a key role in securing multiple sponsorships for Roboveda’23.",
   },
   {
-    role: "Designing Team Member",
-    org: "The Robotics Club - SNIST",
+    title: "Designing Team Member - The Robotics Club",
     time: "Oct 2022 - Nov 2023",
-    desc: "Designed festival creatives, GIFs, posters, and the annual club magazine.",
+    desc: "Created festival creatives, magazine designs, and digital assets including posters and GIFs.",
   },
   {
-    role: "Student Mentor",
-    org: "The Robotics Club - SNIST",
+    title: "Student Mentor - The Robotics Club",
     time: "Feb 2023 - Jul 2023",
-    desc: "Mentored a 9-member team in building a Pet Health Monitoring System using IoT.",
+    desc: "Guided a 9-member team in developing a Pet Health Monitoring System using IoT sensors and microcontrollers.",
   },
 ];
 
 const Experience = () => {
   return (
-    <section id="Experience" className="py-16 bg-white dark:bg-gray-900">
-      <h2 className="text-4xl font-bold text-center text-blue-600 mb-12">
-        Leadership & Responsibilities
-      </h2>
-
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:grid grid-cols-9 text-blue-50">
-          {timeline.map((item, i) => (
-            <div
-              key={i}
-              className={`flex ${i % 2 === 0 ? "flex-row-reverse md:contents" : "md:contents"}`}
-            >
-              {/* Card */}
-              <div
-                className={`bg-blue-500 p-4 rounded-xl my-4 shadow-md ${
-                  i % 2 === 0
-                    ? "col-start-1 col-end-5 ml-auto"
-                    : "col-start-6 col-end-10 mr-auto"
-                }`}
-              >
-                <h3 className="font-semibold text-lg mb-1">{item.role}</h3>
-                <p className="text-sm text-white font-medium mb-1">
-                  {item.org}
-                </p>
-                <p className="text-xs text-blue-200 mb-2">{item.time}</p>
-                <p className="leading-tight text-justify">{item.desc}</p>
-              </div>
-
-              {/* Line and Dot */}
-              <div
-                className={`col-start-5 col-end-6 md:mx-auto relative ${
-                  i % 2 === 0 ? "mr-10" : "ml-10"
-                }`}
-              >
-                <div className="h-full w-6 flex items-center justify-center">
-                  <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                </div>
-                <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-              </div>
+    <section className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
+      <div className="container max-w-5xl px-4 py-16 mx-auto">
+        <div className="grid gap-4 sm:grid-cols-12">
+          
+          {/* Section Heading */}
+          <div className="col-span-12 sm:col-span-3">
+            <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-1 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-violet-600 transition-all duration-500">
+              <h3 className="text-3xl font-semibold text-violet-600 dark:text-violet-500">
+                Leadership & Responsibilities
+              </h3>
+              <span className="text-sm font-bold tracking-wider uppercase text-gray-500 dark:text-gray-400">
+                Club & Community Contributions
+              </span>
             </div>
-          ))}
+          </div>
+
+          {/* Timeline Content */}
+          <div className="relative col-span-12 sm:col-span-9 px-4 space-y-12 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:left-3 sm:before:w-0.5 sm:before:bg-violet-600 sm:before:rounded-full before:transition-all before:duration-700">
+            {timeline.map((item, index) => (
+              <div key={index} className="flex flex-col sm:pl-8 sm:relative group">
+                <span className="sm:absolute sm:left-[-2px] sm:top-1 sm:w-4 sm:h-4 rounded-full bg-violet-600 border-4 border-white dark:border-gray-900 shadow-lg transition-transform duration-300 group-hover:scale-110 z-[1]"></span>
+                <h3 className="text-xl font-semibold text-violet-700 dark:text-violet-400">
+                  {item.title}
+                </h3>
+                <time className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                  {item.time}
+                </time>
+                <p className="mt-3 text-gray-700 dark:text-gray-300">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
