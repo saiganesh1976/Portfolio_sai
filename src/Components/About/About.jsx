@@ -19,7 +19,7 @@ import java_icon from "../../assets/Java.svg";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center justify-center gap-8 p-8 md:p-16 bg-white">
+    <div id="about" className="flex flex-col items-center justify-center gap-8 p-8 md:p-16">
       <h1 className="text-5xl text-center font-semibold text-gray-900">About Me</h1>
       <div className="flex flex-col md:flex-row items-center md:items-start mt-10 gap-12">
         <div className="w-full md:w-1/2 flex justify-center">
