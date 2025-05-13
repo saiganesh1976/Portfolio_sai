@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import profile_img from "../../assets/profile_img.jpg";
 import linkedin_icon from "../../assets/linkedIn.svg";
 import github_icon from "../../assets/github.svg";
@@ -6,7 +6,29 @@ import instagram_icon from "../../assets/instagram.svg";
 // import resume from '../../assets/SaiGanesh_Resume.pdf';
 import { FiDownload } from "react-icons/fi";
 
+  const skills = [
+  "React.js",
+  "Node.js",
+  "MongoDB",
+  "Express.js",
+  "JavaScript",
+  "HTML & CSS",
+  "Tailwind CSS",
+  "Flutter",
+  "Python",
+  "C++"
+];
+
 const Hero = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
+    }, 1000); // Change every second
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
   return (
     <div className="flex flex-col items-center text-center p-6 md:py-28 md:px-48 m gap-6 lg:flex-row lg:gap-14">
       <div className="w-full lg:w-1/3">
@@ -17,11 +39,14 @@ const Hero = () => {
         />
       </div>
       <div className="flex flex-col items-center lg:items-start lg:text-left gap-4 lg:w-2/3">
-        <p className=" text-xl">Hello There,</p>
+        <p className=" text-xl">Hi There,</p>
         <h1 className="text-4xl md:text-5xl font-semibold">
           I'm <span className="text-violet-400">Sai Ganesh Ratnala</span>
         </h1>
-        <p className="text-xl md:text-xl">Final Year Student at SNIST, Hyderabad</p>
+        <p className="text-xl md:text-xl">a Final Year Electronics & Computer Engineering Student at SNIST, Hyderabad.</p>
+        <h1 className="text-3xl font-bold text-center transition-all duration-500 ease-in-out">
+          I specialize in <span className="text-blue-600">{skills[currentIndex]}</span>
+        </h1>
         <div className="flex gap-3">
           <a href="https://www.linkedin.com/in/saiganeshratnala/" target="_blank">
             <img src={linkedin_icon} alt="" className="w-8 my-5" />
