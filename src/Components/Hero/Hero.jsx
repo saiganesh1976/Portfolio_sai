@@ -7,10 +7,12 @@ import instagram_icon from "../../assets/instagram.svg";
 import { FiDownload } from "react-icons/fi";
 
 const skills = [
-  "MERN Stack Developer",
-  "Java Programmer",
-  "Robotics Enthusiast",
-  "Tailwind CSS",
+  "Full-Stack MERN Developer",
+  "Java Developer",
+  "IoT Enthusiast",
+  "Web & UI/UX Designer",
+  "Robotics & Embedded Systems",
+  "Data Science & Analytics",
 ];
 
 const Hero = () => {
@@ -24,14 +26,13 @@ const Hero = () => {
         if (nextChar) {
           return prevText + nextChar;
         } else {
-          // Once a skill is fully typed, switch to the next one
           setCurrentSkill((prevSkill) => (prevSkill + 1) % skills.length);
           return "";
         }
       });
-    }, 100); // Typing speed (100ms per character)
+    }, 100); 
 
-    return () => clearInterval(typingEffect); // Clean up interval on unmount
+    return () => clearInterval(typingEffect); 
   }, [currentSkill]);
 
   return (
@@ -62,13 +63,13 @@ const Hero = () => {
             <img src={instagram_icon} alt="" className="w-8 my-5" />
           </a>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 mt-3 items-center">
-          <div className="mt-3 lg:mt-0 transition ease-in-out delay-150 border-2 hover:-translate-z-1 hover:scale-105 duration-700 bg-gradient-to-r from-violet-500 to-fuchsia-500 py-3 px-5 rounded-full font-medium cursor-pointer text-md text-white">
-            <a href="#contact">Connect with me</a>
+        <div className="flex flex-col md:flex-row gap-6 mt-6 items-center">
+          <div className="transition-transform ease-in-out duration-300 hover:scale-105 bg-gradient-to-r from-indigo-600 to-blue-500 py-3 px-6 rounded-full text-md text-white font-semibold cursor-pointer hover:shadow-lg">
+            <a href="#contact">Let's Connect</a>
           </div>
           <a href="/SaiGanesh_Resume.pdf" download>
-            <div className="flex items-center justify-center gap-2 transition ease-in-out delay-150 hover:scale-105 duration-700 border-2 border-violet-300 hover:border-violet-600 py-3 px-5 w-50 text-center rounded-full font-medium cursor-pointer text-md text-violet-500">
-              My Resume <FiDownload className="text-violet-500" />
+            <div className="transition-all duration-300 ease-in-out hover:scale-105 border-2 border-indigo-400 hover:border-indigo-600 py-3 px-6 rounded-full font-medium text-indigo-500 cursor-pointer flex items-center justify-center gap-2">
+              <span>Download Resume</span> <FiDownload className="text-indigo-500" />
             </div>
           </a>
         </div>
