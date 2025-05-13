@@ -1,13 +1,44 @@
 import React from "react";
-import project2 from "../../assets/project2.png";
-import project1 from "../../assets/project1.png";
-import project5 from "../../assets/project5.png";
-import project4 from "../../assets/project4.png";
-import menstore from "../../assets/menstore.png";
+import { FaGithub } from "react-icons/fa";
 import arrow_icon from "../../assets/arrow_icon.svg";
+import menstore from "../../assets/menstore.png";
+import project1 from "../../assets/project1.png";
+import project2 from "../../assets/project2.png";
+import project4 from "../../assets/project4.png";
+import project5 from "../../assets/project5.png";
 import Eseva from "../../assets/e-seva.png";
 import eration from "../../assets/eration.png";
-import { FaGithub } from "react-icons/fa";
+
+const ProjectCard = ({ project }) => (
+  <div className="flex flex-col w-full sm:w-[320px] rounded-lg border-4 hover:bg-violet-900 overflow-hidden hover:shadow-xl hover:shadow-violet-300 transition-all">
+    <div className="overflow-hidden">
+      <img
+        src={project.img}
+        alt={project.title}
+        className="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110"
+      />
+    </div>
+    <div className="flex flex-col justify-between px-6 py-4 flex-grow">
+      <h2 className="font-semibold text-xl text-center mb-4">{project.title}</h2>
+      <div className="flex justify-center flex-wrap gap-4">
+        {project.live && (
+          <a href={project.live} target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
+              Live Link <img src={arrow_icon} alt="arrow" className="w-4" />
+            </button>
+          </a>
+        )}
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
+              <FaGithub /> GitHub Link
+            </button>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+);
 
 const projects = [
   {
@@ -24,7 +55,7 @@ const projects = [
   },
   {
     img: menstore,
-    title: "MenStore.",
+    title: "MenStore",
     live: "https://menstore-frontend.onrender.com/",
     github: "https://github.com/saiganesh1976/menstore",
   },
@@ -50,47 +81,15 @@ const projects = [
   },
 ];
 
-const Projects = () => {
-  return (
-    <div id="projects" className="px-6 sm:px-12 md:px-24 py-12 flex flex-col items-center">
-      <h1 className="text-4xl sm:text-5xl font-semibold text-center mb-12">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap justify-center gap-y-12 gap-x-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="flex flex-col w-full sm:w-[320px] rounded border-4 hover:bg-violet-900 overflow-hidden hover:shadow-lg hover:shadow-violet-300 transition-all"
-          >
-            <div className="overflow-hidden">
-              <img
-                src={project.img}
-                alt={project.title}
-                className="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110"
-              />
-            </div>
-            <div className="flex flex-col justify-between px-6 py-4 flex-grow">
-              <h2 className="font-semibold text-xl text-center mb-4">{project.title}</h2>
-              <div className="flex justify-center flex-wrap gap-4">
-                {project.live && (
-                  <a href={project.live} target="_blank" rel="noopener noreferrer">
-                    <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
-                      Live Link <img src={arrow_icon} alt="arrow" className="w-4" />
-                    </button>
-                  </a>
-                )}
-                {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium border-2 rounded-md transition hover:bg-violet-600">
-                      <FaGithub /> GitHub Link
-                    </button>
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+const Projects = () => (
+  <div id="projects" className="px-6 sm:px-12 md:px-24 py-12 flex flex-col items-center">
+    <h1 className="text-4xl sm:text-5xl font-semibold text-center mb-12">Projects</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default Projects;
