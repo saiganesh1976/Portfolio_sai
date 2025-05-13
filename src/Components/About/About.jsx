@@ -20,7 +20,7 @@ import java_icon from "../../assets/Java.svg";
 const About = () => {
   return (
     <div id="about" className="flex flex-col items-center justify-center gap-8 p-8 md:p-16">
-      <h1 className="text-5xl text-center font-semibold text-gray-900">About Me</h1>
+      <h1 className="text-5xl text-center font-semibold">About Me</h1>
       <div className="flex flex-col md:flex-row items-center md:items-start mt-10 gap-12">
         <div className="w-full md:w-1/2 flex justify-center">
           <img
@@ -30,7 +30,7 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col gap-8 w-full md:w-1/2">
-          <p className="text-lg text-gray-700 text-justify">
+          <p className="text-lg text-justify">
             Hello, I’m Sai Ganesh Ratnala, a passionate and dedicated Final Year B.Tech student specializing in Electronics and Computer Engineering at Sreenidhi Institute of Science and Technology (SNIST), Hyderabad. I'm set to graduate in 2025.
             <br />
             With a keen interest in Robotics and Web Development, I have gained hands-on experience through a variety of personal and collaborative projects. My enthusiasm for solving real-world problems through innovative technology drives me to constantly learn and improve.
@@ -39,8 +39,8 @@ const About = () => {
           </p>
 
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">Key Skills & Technologies:</h2>
-            <div className="grid lg:grid-cols-5 grid-cols-3 gap-6 mt-4">
+            <h2 className="text-xl font-semibold">Key Skills & Technologies:</h2>
+            <div className="grid lg:grid-cols-5 grid-cols-3 gap-4 mt-4">
               <img
                 src={java_icon}
                 alt="Java"
