@@ -30,12 +30,12 @@ const About = () => {
         <div className="flex flex-col gap-10 w-full md:w-1/2">
           <div className=" text-justify">
             <p>
-              I am SaiGanesh student of Electronics and Computer Engineering at
-              Sreenidhi Institute of Science and Technology, expected to
-              graduate in 2025. I have a keen interest in Robotics, Web
-              Development, I have acquired multiple skills in these domains. I
-              am always eager to learn new things, challenge myself, and
-              collaborate with others who share my passion and enthusiasm.
+              I’m Sai Ganesh Ratnala, a Final Year B.Tech student in Electronics and Computer Engineering at Sreenidhi Institute of Science and Technology (SNIST),
+              Hyderabad, graduating in 2025.
+              <br>
+              With a strong interest in Robotics and Web Development, I have built hands-on experience through diverse projects and leadership roles. 
+              I enjoy exploring new technologies, solving real-world problems, and collaborating with like-minded individuals to create impactful solutions.
+
             </p>
           </div>
           <div>
