@@ -31,7 +31,6 @@ const NavbarLinks = ({ isOpen }) => (
       <NavItem href="#Education">Education</NavItem>
       <NavItem href="#Experience">Experiences</NavItem>
       <NavItem href="#projects">Projects</NavItem>
-      <NavItem href="#contact">Contact</NavItem>
     </ul>
   </div>
 );
@@ -43,7 +42,7 @@ const NavItem = ({ href, children }) => (
 );
 
 const ConnectButton = () => (
-  <div className="mt-3 hidden lg:block lg:mt-0 transition-transform transform hover:scale-110 duration-500 hover:rotate-3d hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 py-3 px-5 rounded-full font-medium cursor-pointer text-md text-white">
+  <div className="mt-3 hidden lg:block lg:mt-0 border-2 border-violet transition-transform transform hover:scale-110 duration-500 hover:rotate-3d hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 py-3 px-5 rounded-full font-medium cursor-pointer text-md text-white">
     <a href="#contact">Connect with me</a>
   </div>
 );
